@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js" 
+        integrity="sha512-ALoawPS0JxHQ+8dGL7htZIlVNRaE/SN9gHD4G8pJJTi9H4BQ/3PjdvhggSGR34g00mvTPFkxQuveQUsJA5664Q==" 
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+    <script src="js/main.js" defer></script>
+
+</head>
+<body>
+    <main>
+
+    </main>
+
+    <!-- To pop up, otherwise hidden -->
+    <div id="input" class="message-backdrop hidden">
+        <div class="data-entry-box">
+            <div class="data-entry">
+                <textarea name="data" id="data" cols="30" rows="10"></textarea>
+            </div>
+            <button id="cancel">cancel</button>
+            <button id="save">save</button>
+        </div>
+    </div>
+
+    <nav>
+        <button id="menu"><img src="assets/Hamburger_icon.svg" alt="menu" srcset=""></button>
+    </nav>
+
+
+</body>
+</html>
