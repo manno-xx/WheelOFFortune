@@ -53,6 +53,7 @@ function setup() {
     createCanvas(baseCanvasSize, baseCanvasSize);
     colorMode(HSB, 1, 1, 1);
     createColorBands();
+    calcScaleFactor();
 }
 
 function draw() {
@@ -258,13 +259,6 @@ function calcScaleFactor() {
     resizeCanvas(width, width);
 }
 
-function init(){
-    document.getElementById("menu").addEventListener("click", toggleInput);
-    document.getElementById("cancel").addEventListener("click", toggleInput);
-    document.getElementById("save").addEventListener("click", saveData);
-    calcScaleFactor();
-}
-
 function saveData(){
     let contents = document.getElementById("data").value;
     contents = contents.trim();
@@ -277,6 +271,13 @@ function saveData(){
 function toggleInput(){
     let input = document.getElementById("input");
     input.classList.toggle("hidden");
+}
+
+function init(){
+    document.getElementById("menu").addEventListener("click", toggleInput);
+    document.getElementById("cancel").addEventListener("click", toggleInput);
+    document.getElementById("save").addEventListener("click", saveData);
+    // calcScaleFactor();
 }
 
 window.addEventListener("keydown", function (e) {
